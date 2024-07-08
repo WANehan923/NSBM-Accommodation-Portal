@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+    background-color: #ffffffc1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    background-color: #007bff;
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.content ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.content ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.content ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="tel"],
+.container input[type="password"],
+.container select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #0056b3;
+}
+
+.container p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.container p a:hover {
+    text-decoration: underline;
+}
+
+.home ul {
+    list-style: none;
+    padding: 0;
+}
+
+.home ul li {
+    margin-bottom: 10px;
+}
+
+.home ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.home ul li a:hover {
+    text-decoration: underline;
+}

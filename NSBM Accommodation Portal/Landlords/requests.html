@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Requests</title>
+    <link rel="stylesheet" href="../css/landlords.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="landlord_dashboard.html">Dashboard</a></li>
+                <li><a href="add_property.html">Add New Property</a></li>
+                <li><a href="own_property_list.html">Own Property List</a></li>
+            </ul>
+        </nav>
+        <h2>Student Requests</h2>
+        <div class="request-list">
+            <div class="request">
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> john@example.com</p>
+                <p><strong>Message:</strong> Looking for accommodation near the campus.</p>
+                <div class="button-group">
+                    <button onclick="acceptRequest()">Accept</button>
+                    <button onclick="rejectRequest()">Reject</button>
+                </div>
+            </div>
+            <div class="request">
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> john@example.com</p>
+                <p><strong>Message:</strong> Looking for accommodation near the campus.</p>
+                <div class="button-group">
+                    <button onclick="acceptRequest()">Accept</button>
+                    <button onclick="rejectRequest()">Reject</button>
+                </div>
+            </div>
+            <!-- Add more request items here -->
+        </div>
+    </div>
+    <script>
+        function acceptRequest() {
+            // Add logic to accept the request
+            alert("Request accepted!");
+        }
+
+        function rejectRequest() {
+            // Add logic to reject the request
+            alert("Request rejected!");
+        }
+    </script>
+</body>
+</html>

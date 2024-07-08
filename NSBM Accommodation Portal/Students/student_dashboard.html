@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="../css/student.css">
+    <!-- Include Google Maps API script if using Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4QmIlc_wC_I4AucK7upJR2sl47S-BB5w"></script>
+    <style>
+        #google-map {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="student_dashboard.html">Dashboard</a></li>
+                <li><a href="property_details.html">Property Details</a></li>
+                <li><a href="request_page.html">Make Request</a></li>
+            </ul>
+        </nav>
+        <h2>Student Dashboard</h2>
+        <div class="dashboard">
+            <div class="property-list">
+                <h3>Property List</h3>
+                <!-- Placeholder for property list -->
+                <ul>
+                    <li><a href="#">Property 1</a></li>
+                    <li><a href="#">Property 2</a></li>
+                    <li><a href="#">Property 3</a></li>
+                    <!-- Add more properties here -->
+                </ul>
+            </div>
+            <div class="map">
+                <h3>Map Display</h3>
+                <div id="google-map"></div> <!-- Google Maps display -->
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript code to initialize Google Maps -->
+    <script>
+        function initMap() {
+            var mapOptions = {
+                center: { lat: 6.8202297, lng: 80.0395329 },
+                zoom: 16
+            };
+            var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+        }
+        google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
+</body>
+</html>

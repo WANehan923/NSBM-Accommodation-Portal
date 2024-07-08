@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Property</title>
+    <link rel="stylesheet" href="../css/landlords.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="landlord_dashboard.html">Dashboard</a></li>
+                <li><a href="add_property.html">Add New Property</a></li>
+                <li><a href="own_property_list.html">Own Property List</a></li>
+            </ul>
+        </nav>
+        <h2>Add New Property</h2>
+        <form action="add_property.php" method="post">
+            <label for="location">Location:</label>
+            <input type="text" name="location" id="location" placeholder="Enter location" required>
+            <label for="image">Upload Image:</label>
+            <input type="file" name="image" id="image" accept="image/*" required>
+            <label for="beds">Available Bed Count:</label>
+            <input type="number" name="beds" id="beds" placeholder="Enter bed count" required>
+            <label for="category">Select Category:</label>
+            <select name="category" id="category" required>
+                <option value="luxury">Luxury</option>
+                <option value="comfort">Comfort</option>
+                <option value="budget">Budget</option>
+            </select>
+            <label for="contact">Contact Number:</label>
+            <input type="tel" name="contact" id="contact" placeholder="Enter contact number" required>
+            <label for="details">Details:</label>
+            <textarea name="details" id="details" rows="4" placeholder="Enter property details"></textarea>
+            <br>
+            <label for="price">Price (LKR):</label>
+            <input type="number" name="price" id="price" placeholder="Enter price" required>
+            <button type="submit">Add Property</button>
+        </form>
+    </div>
+    <!-- Dummy map -->
+    <script>
+        // Dummy function to simulate map view
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: -34.397, lng: 150.644},
+                zoom: 8
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>

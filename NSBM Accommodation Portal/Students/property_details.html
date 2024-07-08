@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details</title>
+    <link rel="stylesheet" href="../css/student.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="student_dashboard.html">Dashboard</a></li>
+                <li><a href="property_details.html">Property Details</a></li>
+                <li><a href="request_page.html">Make Request</a></li>
+            </ul>
+        </nav>
+        <h2>Property Details</h2>
+        <div class="property-details">
+            <div class="property-details">
+                <h3>Property Information</h3>
+                <p><strong>Location:</strong> <?php echo $_GET['location']; ?></p>
+                <p><strong>Available Bed Count:</strong> <?php echo $_GET['beds']; ?></p>
+                <p><strong>Category:</strong> <?php echo $_GET['category']; ?></p>
+                <p><strong>Contact Number:</strong> <?php echo $_GET['contact']; ?></p>
+                <p><strong>Details:</strong> <?php echo $_GET['details']; ?></p>
+                <p><strong>Price (LKR):</strong> <?php echo $_GET['price']; ?></p>
+            </div>
+            <button onclick="makeRequest()">Make Request</button>
+        </div>
+    </div>
+</body>
+</html>

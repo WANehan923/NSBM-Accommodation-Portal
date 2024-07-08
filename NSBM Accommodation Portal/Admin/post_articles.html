@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Articles</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/landlords.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="admin_dashboard.html">Dashboard</a></li>
+                <li><a href="create_account.html">Create Account</a></li>
+                <li><a href="post_articles.html">Post Articles</a></li>
+                <li><a href="ad_approve.html">Ad Approve</a></li>
+            </ul>
+        </nav>
+        <h2>Post Articles</h2>
+        <form action="add_property.php" method="post">
+            <label for="location">Location:</label>
+            <input type="text" name="location" id="location" placeholder="Enter location" required>
+            <label for="image">Upload Image:</label>
+            <input type="file" name="image" id="image" accept="image/*" required>
+            <label for="beds">Available Bed Count:</label>
+            <input type="number" name="beds" id="beds" placeholder="Enter bed count" required>
+            <label for="category">Select Category:</label>
+            <select name="category" id="category" required>
+                <option value="luxury">Luxury</option>
+                <option value="comfort">Comfort</option>
+                <option value="budget">Budget</option>
+            </select>
+            <label for="contact">Contact Number:</label>
+            <input type="tel" name="contact" id="contact" placeholder="Enter contact number" required>
+            <label for="details">Details:</label>
+            <textarea name="details" id="details" rows="4" placeholder="Enter property details"></textarea>
+            <br>
+            <label for="price">Price (LKR):</label>
+            <input type="number" name="price" id="price" placeholder="Enter price" required>
+            <button type="submit">Add Property</button>
+        </form>
+    </div>
+</body>
+</html>

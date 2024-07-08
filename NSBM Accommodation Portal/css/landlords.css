@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px; /* Added padding to body */
+    background-image: url('../img/background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 100px auto;
+    background-color: #ffffffc1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    background-color: #007bff;
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="tel"],
+.container input[type="password"],
+.container input[type="file"],
+.container input[type="number"],
+.container select {
+    margin-bottom: 20px; /* Increased margin bottom for spacing */
+    padding: 12px; /* Increased padding for consistent size */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Added width for consistent size */
+    box-sizing: border-box; /* Ensures padding and border are included in width calculation */
+}
+
+.container button {
+    padding: 12px; /* Increased padding for consistent size */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #000000;
+}
+
+.container p {
+    text-align: center;
+    margin-top: 20px; /* Increased margin top for spacing */
+}
+
+.container p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.container p a:hover {
+    text-decoration: underline;
+}
+
+.container button {
+    padding: 12px;
+    margin-right: 10px; /* Add margin-right for spacing between buttons */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto; /* Adjust width to fit content */
+    margin-bottom: 10px;
+}
+
+.container button:hover {
+    opacity: 0.9; /* Reduce opacity on hover */
+}
+
+.container button[type="submit"] {
+    background-color: #28a745; /* Green color for Save button */
+    color: #fff;
+}
+
+.container button[type="button"] {
+    background-color: #000000; /* Black color for Cancel button */
+    color: #fff;
+}
+
+.container button[type="button"]:hover {
+    background-color: #dc3545; /* Darker shade on hover */
+}
+
+.container button[type="button"][onclick="confirmDelete"] {
+    background-color: #dc3545; /* Red color for Delete button */
+    color: #fff;
+}
